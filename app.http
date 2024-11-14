@@ -1,0 +1,91 @@
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "name": "kohli",
+    "email": "kohlirox@gmail.com",
+    "password": "123@kohli"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "email": "kohlirox@gmail.com",
+    "password": "123@kohli"
+}
+
+###
+
+GET http://localhost:3000/profile/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+###
+
+PUT http://localhost:3000/users/name/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+{
+    "name": "kohliRox"
+}
+
+###
+
+PUT http://localhost:3000/users/email/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+{
+    "email": "kohlirox@gmail.com"
+}
+
+###
+
+PUT http://localhost:3000/users/password/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+{
+    "password": "kohli@123",
+    "pass": "123@kohli"
+}
+
+###
+
+GET http://localhost:3000/todos/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+{
+    "id": "6789",
+    "todo": "work",
+    "status": "12314"
+}
+
+###
+
+PUT http://localhost:3000/todos/1234/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+{
+    "status": "COMPLETED"
+}
+
+###
+
+DELETE http://localhost:3000/todos/1234/
+Content-Type: application/json
+Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+###
