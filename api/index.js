@@ -2,9 +2,11 @@ import { MongoClient } from "mongodb";
 import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 app.listen(3000, () => console.log("started in port 3000"));
 
 const uri =
@@ -224,7 +226,7 @@ async function run() {
         const match = await users.findOne({ email: email });
         if (match) {
           response.status(200);
-          response.send(match.todos);
+          response.send(match.todos ? match.todos : []);
         } else {
           response.status(400);
           response.send({ err: "cannot find the user" });
