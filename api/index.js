@@ -99,7 +99,7 @@ async function run() {
         response.send({ err: e });
       }
     });
-    app.get("/login", async (request, response) => {
+    app.post("/login", async (request, response) => {
       try {
         const { email, password } = request.body;
         const match = await users.findOne({ email: email });
