@@ -10,6 +10,7 @@ app.use(cors());
 app.listen(3000, () => console.log("started in port 3000"));
 
 const uri = process.env.MONGODB_URI;
+console.log(url);
 
 const client = new MongoClient(uri);
 
