@@ -13,8 +13,8 @@ POST http://localhost:3000/login/
 Content-Type: application/json
 
 {
-    "email": "kohlirox@gmail.com",
-    "password": "123@kohli"
+    "email": "smokygun@gmail.com",
+    "password": "smokygun16"
 }
 
 ###
@@ -87,5 +87,15 @@ Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpc
 DELETE http://localhost:3000/todos/1234/
 Content-Type: application/json
 Authorization: beader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtvaGxpcm94QGdtYWlsLmNvbSIsImlhdCI6MTczMTU4MzMwMX0.ZIOZpbsIpH3GKAl92SAFEjv07COLqHlVhtzGxYTfMRs
+
+###
+
+POST https://todo-mongodb.vercel.app/login/
+Content-Type: application/json
+
+{
+    "email": "smokygun@gmail.com",
+    "password": "smokygun16"
+}
 
 ###
